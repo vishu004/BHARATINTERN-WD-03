@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conference Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="modeimage">
+                <button style="cursor: pointer;" id="toggle-button"><span class="bi bi-sun-fill"></span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="navigation">
+            <span class="bi bi-house"></span>
+            <span class="bi bi-chat"></span>
+            <span class="bi bi-telephone"></span>
+            <span class="bi bi-device-ssd"></span>
+            <span class="bi bi-people"></span>
+            <span class="bi bi-folder"></span>
+            <span class="bi bi-gear"></span>
+        </div>
+        <div class="bigimagecontainer">
+            <div class="imagecontainer1">
+                <img src="andy.jpg" alt="#">
+                <img src="emmy.webp" alt="#">
+                <img src="tim.jpg" alt="#">
+            </div>
+            <div class="imagecontainer2">
+                <img src="jessica.jpg" alt="#">
+                <img src="ryan.jpg" alt="#">
+                <img src="tina.jpg" alt="#">
+            </div>
+        </div>
+        <div class="livechatcontainer">
+            <button class="btn"><span class="bi bi-camera-video"></span>Live Chat</button>
+            <hr>
+            <div class="ryancontainer">
+                <img src="ryan.jpg" alt="#">
+                <span class="chat">Ryan Patrick</span>
+                <p class="cweo">Helloo team!😍</p>
+            </div>
+            <div class="andycontainer">
+                <img src="andy.jpg" alt="#">
+                <span class="chat">Andy Will</span>
+                <p class="cweo">Hello! Can you hear me?🤯<a href="#">@ryanpatrick</a></p>
+            </div>
+            <div class="jessicacontainer">
+                <img src="jessica.jpg" alt="#">
+                <span class="chat">Jessica Bell</span>
+                <p class="cweo">Hi team! Let's get started it.</p>
+            </div>
+            <div class="emmycontainer">
+                <img src="emmy.webp" alt="#">
+                <span class="chat">Emmy Lou</span>
+                <p id="message">Good morning!🌈</p>
+            </div>
+            <div class="timcontainer">
+                <img src="tim.jpg" alt="#">
+                <span class="chat">Tim Russel</span>
+                <p class="cweo">New design document⬇️</p>
+                <div class="filecontainer">
+                    <span class="bi bi-gem"></span>
+                    <div class="spancontainer">
+                        <span>NewYeaar.sketch</span>
+                        <span>120 MB</span>
+                    </div>
+                    <button><span class="bi bi-download"></span></button>
+                </div>
+                <div class="ryancontainer">
+                    <img src="ryan.jpg" alt="#">
+                    <span class="chat">Ryan Patrick</span>
+                    <p class="cweo" style="width: 79px;">Hi team!❤️</p>
+                    <p class="cweo">I downloaded the file <a href="#">@timussel</a></p>
+                </div>
+                <div class="emmycontainer" style="left: 40px;">
+                    <img src="emmy.webp" alt="#">
+                    <span class="chat">Emmy Lou</span>
+                    <p id="message" style="width: 155px;">Woooww! Awesome❤️</p>
+                </div>
+                <label for="mytext"> 
+                    <input type="text" placeholder="Type your meesage...">
+                    <button style="position: relative;
+                    top: -32px;
+                    left: 234px;
+                    color: blue;
+                    background-color: white;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;"><span class="bi bi-telegram" style="font-size: 1.5rem;"></span></button>
+                </label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="buttoncontainer">
+            <button style="cursor: pointer;"><span class="bi bi-mic-mute"></span></button>
+            <button style="cursor: pointer;"><span class="bi bi-camera-video-off"></span></button>
+            <button style="cursor: pointer;"><span class="bi bi-fullscreen"></span></button>
+            <button class="telephonebtn" style="cursor: pointer;"><span class="bi bi-telephone-x"></span>Leave</button>
+            <button class="telephonebtn" id="tele"><span class="bi bi-zoom-in" style="cursor: pointer;"></span> 100% <span class="bi bi-zoom-out" style="cursor: pointer;"></span></button>
+        </div>
+        <div class="participantcontainer">
+            <img src="tim.jpg" alt="#">
+            <img src="andy.jpg" alt="#">
+            <img src="jessica.jpg" alt="#">
+            <img src="ryan.jpg" alt="#">
+            <button>2+</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
